@@ -1,18 +1,10 @@
 # Recipe-website
-Hi! We are two students - Amy & Jess
-Welcome to our website of recipes!
 
 <!DOCTYPE html>
 <head>
 <script src="/assets/jquery.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <style>
-body {
-  font-family: helvetica, sans-serif;
-  margin: 0 auto;
-  max-width: 600px;
-  background: #232323;
-}
 div {
   height: 200px;
   background-size: cover;
@@ -26,6 +18,8 @@ h1 {
   font-size: 75px;
   color: #aaaaaa;
   margin: 60px 0 0 0;
+  background: url('https://www.thegraciouspantry.com/wp-content/uploads/2013/08/how-to-share-a-recipe-1-1.jpg');
+  background-size: cover;   
 }
 h2 {
   text-align: center;
@@ -94,20 +88,48 @@ small {
 </style>
 </head>
 <body>
+<header>
+    <h1>Jess and Amy's Recipe Website</h1>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Recipes</a></li>
+      <li><a href="#">Add your own</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>About us</h2>
+    <p>We are two students who love cooking and most importantly eating. Welcome to our website containing some of our favourite recipes - we'd love to hear some of yours!.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Recipes</h2>
+    <p>.....</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Add your own</h2>
+    <p>.......</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
 <h1>Jess and Amy's Recipe Website</h1>
 <h2>a must see for students</h2>
 <div class="first">
-  <p>Sweet potato and leek soup <span class="price">$14</span><br />
-  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+  <p>Sweet potato and leek soup <span class="price"></span><br />
+</p>
 </div>
 <div class="second">
-  <p>Avocado toast <span class="price">$22</span><br />
-  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+  <p>Avocado toast <span class="price"></span><br />
+</p>
 </div>
   
 <div class="dessert">
   <p>Stir fry <span class="price">$8</span><br />
-  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+  <small></p>
 </div>
 <script>
   $('div').on('click', function() {
