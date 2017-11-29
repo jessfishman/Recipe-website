@@ -89,7 +89,6 @@ small {
 </head>
 <body>
 <header>
-    <h1>Jess and Amy's Recipe Website</h1>
     <ul>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Recipes</a></li>
@@ -128,7 +127,7 @@ small {
 </div>
   
 <div class="dessert">
-  <p>Stir fry <span class="price">$8</span><br />
+  <p>Stir fry <span class="price"></span><br />
   <small></p>
 </div>
 <script>
